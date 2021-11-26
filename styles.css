@@ -8,17 +8,19 @@ body {
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 header, footer {
   display: flex;
   background-color: #1f2937;
-  /* justify-content: space-between; */
   /* flex-direction: column; */
-  padding-left: 15%;
-  padding-right: 15%;
+  /* padding-left: 15%;
+  padding-right: 15%; */
   color: white;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 section {
@@ -27,7 +29,7 @@ section {
   padding-right: 15%;
 }
 
-section.random-information, section.random-quote, section.signup-area {
+section.random-information, section.random-quote {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -36,12 +38,18 @@ section.random-information, section.random-quote, section.signup-area {
   padding-bottom: 12.5%;
 }
 
+footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
 h1 {
   margin: 0;
 }
 
-h2 {
-
+h3 {
+  margin: 0;
 }
 
 div.main-title {
@@ -67,14 +75,20 @@ div.title-text-box {
 .nav-bar {
   display: flex;
   gap: 32px;
-  margin-left: auto;
+  /* margin-left: auto; */
   font-size: 18px;
   color: #e5e7eb;
+}
+
+.main-title-container {
+  display: flex;
+  justify-content: center;
 }
 
 .main-title {
   display: flex;
   background-color: #1f2937;
+
   /* padding-left: 15%;
   padding-right: 15%; */
 }
@@ -83,6 +97,13 @@ div.title-text-box {
   font-size: 48px;
   font-weight: 800; /* 800 is for ultra bold */ 
   color: #f9faf8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 5%;
+  padding-bottom: 5%;
+  color: #1f2937; */
 }
 
 .title-subtext {
@@ -122,18 +143,22 @@ div.title-text-box {
 }
 
 .box {
-  background-color:#1f2937;
+  /* background-color:#1f2937; */
   height: 150px;
   width: 150px;
-  border: solid 1px #1f2937;
+  border: solid 5px #3882f6;
+  border-radius: 5px;
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .box img {
-  width: 150px;
-  height: 150px;
+  width: 151px;
+  height: 151px;
+  /* border: 5px solid #3882f6; */
+  /* border-radius: 5px; */
+  display: block;
 }
 
 section.random-quote {
@@ -150,8 +175,35 @@ section.random-quote {
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
+  color: #1f2937;
 }
 
 .lao {
   margin-left: auto;
+}
+
+section.signup-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: white;
+  
+}
+
+.signup-container {
+  height: 125px;
+  width: 750px;
+  display: flex;
+  border-radius: 5px;
+  background:#3882f6;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.signup-container > .signup-button {  /* child selector `>` is used to select descendants */
+  border: solid 1px white;
+  /* margin-top: 2.5%; */
 }
