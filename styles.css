@@ -116,6 +116,11 @@ div.title-text-box {
   font-weight: 600;
 }
 
+.signup-button:hover {
+  background-color: white;
+  color: #3882f6;
+}
+
 .title-text-box > .signup-button {  /* child selector `>` is used to select descendants */
   border: #1f2937;
   margin-top: 2.5%;
